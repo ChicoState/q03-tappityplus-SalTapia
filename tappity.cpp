@@ -2,8 +2,7 @@
 /**
  * Class for tappity
 **/
-#include <iostream>
-using namespace std;
+
 //Constructor sets the reference phrase
 tappity::tappity(std::string reference){
     m_refrence = reference;
@@ -42,6 +41,8 @@ int tappity::length_difference(){
     else{
 
         for(int i = 0; i < m_input.length(); i++){
+            
+            // counts the number of matches
             if(m_input[i] == m_refrence[i]){
                 length+=1;
             }
@@ -59,6 +60,7 @@ int tappity::length_difference(){
             }
         }
     }
+
     return -1;
 }
 
@@ -96,6 +98,8 @@ double tappity::accuracy()
     }
     else{
         for(int i = 0; i < m_input.length(); i++){
+            
+            // counts the number of matches
             if(m_input[i] == m_refrence[i]){
                 accuracy+=1;
             }

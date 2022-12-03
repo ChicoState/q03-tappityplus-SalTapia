@@ -8,6 +8,7 @@
 class tappity
 {
     private:
+    
         std::string m_refrence;
         std::string m_input;
     public:
