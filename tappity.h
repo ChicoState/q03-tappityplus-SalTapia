@@ -8,7 +8,8 @@
 class tappity
 {
     private:
-
+        std::string m_refrence;
+        std::string m_input;
     public:
         //Constructor sets the reference phrase
         tappity(std::string reference);
